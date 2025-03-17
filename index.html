@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Nexus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#22d3ee',
+                        accent: '#0ea5e9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-secondary" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <span class="text-xl font-bold">DIGITAL NEXUS</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#what-we-do" class="hover:text-secondary transition">Our Expertise</a>
+                <a href="#how-we-work" class="hover:text-secondary transition">Collaboration</a>
+                <a href="#pricing" class="hover:text-secondary transition">Investment</a>
+                <a href="#team" class="hover:text-secondary transition">Visionaries</a>
+                <a href="#"
+                    class="bg-secondary text-primary px-4 py-2 rounded-full hover:bg-opacity-90 transition">Connect</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Multiple Banners -->
+    <section class="bg-primary text-white">
+        <!-- Banner 1 -->
+        <div class="bg-gradient-to-r from-primary to-accent py-20">
+            <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-5xl font-bold mb-4">
+                        <span class="text-secondary">Quantum Computing</span><br>
+                        <span class="text-secondary">Neural Interfaces</span><br>
+                        <span class="text-secondary">Synthetic Biology</span>
+                    </h1>
+                    <p class="mb-8 opacity-80">
+                        Bridging the gap between imagination and reality through cutting-edge
+                        technological innovations that reshape how we interact with our world.
+                    </p>
+                    <button
+                        class="border-2 border-white px-6 py-3 font-semibold hover:bg-white hover:text-primary transition">
+                        EMBARK ON A JOURNEY
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/brain-3007165_960_720.png"
+                        alt="Neural Interface" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-xl text-gray-500 mb-8 border-b pb-2 inline-block">Collaborating With Visionary Partners</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 px-4">
+                <img src="https://cdn.worldvectorlogo.com/logos/algolia.svg" alt="Algolia"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+                <img src="https://cdn.worldvectorlogo.com/logos/lapa-4.svg" alt="Lapa"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+                <img src="https://cdn.worldvectorlogo.com/logos/hugo-cms.svg" alt="Hugo"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+                <img src="https://cdn.worldvectorlogo.com/logos/codecademy.svg" alt="Codecademy"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+                <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+                <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" alt="Stripe"
+                    class="h-10 grayscale hover:grayscale-0 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-16">Pioneering Tomorrow</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 flex items-center justify-center border-2 border-gray-300 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quantum Computing Frontiers</h3>
+                    <p class="text-gray-600 mb-4">
+                        Unlocking computational possibilities beyond classical limits, solving complex problems that
+                        reshape industries from cryptography to materials science
+                    </p>
+                    <a href="#" class="text-primary hover:text-secondary transition">Explore the quantum realm</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 flex items-center justify-center border-2 border-gray-300 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Neural Interface Ecosystems</h3>
+                    <p class="text-gray-600 mb-4">
+                        Creating seamless brain-computer connections that revolutionize accessibility, learning, and
+                        human-machine collaboration for enhanced cognitive capabilities
+                    </p>
+                    <a href="#" class="text-primary hover:text-secondary transition">Discover neural possibilities</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 flex items-center justify-center border-2 border-gray-300 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Synthetic Biology Architecture</h3>
+                    <p class="text-gray-600 mb-4">
+                        Engineering biological systems with precision to address global challenges in medicine,
+                        agriculture, and sustainable materials through DNA programming
+                    </p>
+                    <a href="#" class="text-primary hover:text-secondary transition">Witness biological innovation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work / Pricing Section -->
+    <section id="how-we-work" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-4">Collaboration Framework</h2>
+            <p class="text-center text-2xl mb-16">
+                We forge <span class="text-secondary">symbiotic partnerships</span>, leveraging collective expertise for
+                breakthrough innovations.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pricing Plan 1 -->
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="uppercase text-gray-500 font-semibold mb-4">Catalyst</h3>
+                        <div class="text-4xl font-bold mb-4">৳185,000<span
+                                class="text-base font-normal text-gray-500">/month</span></div>
+                        <ul class="text-sm mb-6 space-y-2">
+                            <li>15 innovation hours included monthly</li>
+                            <li>Additional innovation time at ৳18,500/hour after included allocation</li>
+                            <li>Round-the-clock support with 99.95% uptime guarantee</li>
+                            <li>Dedicated innovation portal and direct communication channels</li>
+                        </ul>
+                        <a href="#"
+                            class="block w-full bg-gray-900 text-white py-3 text-center rounded hover:bg-gray-800 transition">Initiate
+                            Dialogue</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Plan 2 -->
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="uppercase text-gray-500 font-semibold mb-4">Accelerator</h3>
+                        <div class="text-4xl font-bold mb-4">৳370,000<span
+                                class="text-base font-normal text-gray-500">/month</span></div>
+                        <ul class="text-sm mb-6 space-y-2">
+                            <li>25 innovation hours included monthly</li>
+                            <li>Additional innovation time at ৳25,900/hour after included allocation</li>
+                            <li>Round-the-clock support with 99.98% uptime guarantee</li>
+                            <li>Dedicated innovation portal and priority communication channels</li>
+                        </ul>
+                        <a href="#"
+                            class="block w-full bg-gray-900 text-white py-3 text-center rounded hover:bg-gray-800 transition">Initiate
+                            Dialogue</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Plan 3 -->
+                <div class="bg-white text-gray-800 rounded-lg overflow-hidden">
+                    <div class="p-6 text-center">
+                        <h3 class="uppercase text-gray-500 font-semibold mb-4">Visionary</h3>
+                        <div class="text-4xl font-bold mb-4">৳1,110,000<span
+                                class="text-base font-normal text-gray-500">/month</span></div>
+                        <ul class="text-sm mb-6 space-y-2">
+                            <li>40 innovation hours included monthly</li>
+                            <li>Additional innovation time at ৳37,000/hour after included allocation</li>
+                            <li>Round-the-clock support with 99.99% uptime guarantee</li>
+                            <li>Dedicated innovation portal and executive communication channels</li>
+                        </ul>
+                        <a href="#"
+                            class="block w-full bg-gray-900 text-white py-3 text-center rounded hover:bg-gray-800 transition">Initiate
+                            Dialogue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-16">Visionary Architects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe"
+                        class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Shamim Hossain</h3>
+                    <p class="text-gray-500">Quantum Systems Architect</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Tinh Nguyen"
+                        class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Tanvir Rahman</h3>
+                    <p class="text-gray-500">Neural Interface Pioneer</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Oto"
+                        class="w-40 h-40 object-cover rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-semibold">Tasnim Akter</h3>
+                    <p class="text-gray-500">Synthetic Biology Innovator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-400" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3v18h18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12h18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 3v18" />
+                </svg>
+            </div>
+            <h2 class="text-4xl font-bold mb-2">We're democratizing</h2>
+            <h2 class="text-4xl font-bold mb-8">Frontier Technologies</h2>
+            <p class="text-gray-500 mb-4">Join our collaborative ecosystem on GitHub</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Innovation Domains</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Quantum Computing</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Neural Interfaces</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Synthetic Biology</a></li>
+                    </ul>
+                </div>
+
+                <!-- Clients -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Collaborators</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition">Research Institutions</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Healthcare Pioneers</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">Sustainability Ventures</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="mailto:innovate@digitalnexus.com.bd"
+                                class="hover:text-secondary transition">innovate@digitalnexus.com.bd</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-secondary transition">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal Framework</h4>
+                    <p class="text-sm opacity-80"> 2025 Digital Nexus Bangladesh</p>
+                    <p class="text-sm opacity-80">All intellectual property protected</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
